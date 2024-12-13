@@ -146,6 +146,29 @@
 					</archive>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-antrun-plugin</artifactId>
+			<version>3.1.0</version>
+			<executions>
+			<execution>
+			<id>copy-jar</id>
+			<phase>package</phase>
+			<goals>
+			<goal>run</goal>
+			</goals>
+			<configuration>
+			<target>
+			<copy
+			    file="target/InteractiveChat-${project.version}.jar"
+		            todir="../target"
+			overwrite="true"/>
+			</target>
+			</configuration>
+			</execution>
+			</executions>
+			</plugin>
 
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -560,8 +583,8 @@
 			<groupId>su.nightexpress</groupId>
 			<artifactId>excellentenchants</artifactId>
 			<scope>system</scope>
-			<version>1.0</version>
-			<systemPath>${basedir}/lib/ExcellentEnchants-4.2.2.jar</systemPath>
+			<version>4.0.4</version>
+			<systemPath>${basedir}/lib/ExcellentEnchants-4.0.4.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>su.nightexpress.nightcore</groupId>

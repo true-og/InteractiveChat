@@ -36,15 +36,6 @@
         <module>V1_19</module>
         <module>V1_19_3</module>
         <module>V1_19_4</module>
-        <module>V1_20</module>
-        <module>V1_20_2</module>
-        <module>V1_20_3</module>
-        <module>V1_20_5</module>
-        <module>V1_20_6</module>
-        <module>V1_21</module>
-        <module>V1_21_1</module>
-        <module>V1_21_2</module>
-        <module>V1_21_3</module>
         <module>common</module>
     </modules>
 </project>
